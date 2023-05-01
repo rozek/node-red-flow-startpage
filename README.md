@@ -14,7 +14,7 @@ This flow relies on [Axios](https://axios-http.com/) for the communication with 
 
 Simply import the contents of file [Startpage-Flow.json](./Startpage-Flow.json) into your Node-RED Flow Editor and Axios will be installed as well (if necessary)
 
-Since the flow is implemented as a "reusable flow", the [corresponding nodes](https://github.com/rozek/node-red-contrib-reusable-flows) should be installed as well - afterwards, Startpage searches may be used anywhere in any workspace of your Node-RED server without having to copy the node which implements this function (this simplifies any updates)
+Since the flow is implemented as a "reusable flow", the [corresponding nodes](https://github.com/rozek/node-red-contrib-reusable-flows) should also be installed - afterwards, Startpage searches may be used anywhere in any workspace of your Node-RED server without having to copy the node which implements this function (this simplifies any updates)
 
 ## Usage ##
 
