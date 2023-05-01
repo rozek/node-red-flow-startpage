@@ -1,0 +1,67 @@
+[
+    {
+        "id": "c81150d2c0326933",
+        "type": "debug",
+        "z": "b51de224d58a5b6a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "86ad3938808b8460",
+        "type": "inject",
+        "z": "b51de224d58a5b6a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "language",
+                "v": "english",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "web scraping",
+        "payloadType": "str",
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "5f06df0b01980338"
+            ]
+        ]
+    },
+    {
+        "id": "5f06df0b01980338",
+        "type": "reusable",
+        "z": "b51de224d58a5b6a",
+        "name": "",
+        "target": "startpage.com",
+        "outputs": 2,
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "c81150d2c0326933"
+            ],
+            [
+                "c81150d2c0326933"
+            ]
+        ]
+    }
+]
