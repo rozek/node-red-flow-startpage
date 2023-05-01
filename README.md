@@ -21,7 +21,7 @@ Since the flow is implemented as a "reusable flow", the [corresponding nodes](ht
 The Startpage flow expects up to two parameters:
 
 * `msg.payload` - initially contains the string to search for. Later on, it will be replaced either by an error message or the parsed search results
-* `msg.language` - the language Startpage should use for the search
+* `msg.language` - the language the search results should be written in
 
 If successfull (success is indicated by `msg.status === 200`), `msg.payload` will return an array with up to 10 search results. Each result is an object with the following properties:
 
