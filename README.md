@@ -14,12 +14,23 @@ The Startpage flow relies on [Axios](https://axios-http.com/) for the communicat
 
 Simply import the contents of file [Startpage-Flow.json](./Startpage-Flow.json) into your Node-RED Flow Editor and Axios will be installed as well (if necessary)
 
-Since the flow is implemented as a "reusable flow", the [corresponding nodes](https://github.com/rozek/node-red-contrib-reusable-flows) should be installed as well - afterwards, Startpage searches may be used anywhere on your Node-RED server without having to copy the node which implements this function (this simplifies any updates)
+Since the flow is implemented as a "reusable flow", the [corresponding nodes](https://github.com/rozek/node-red-contrib-reusable-flows) should be installed as well - afterwards, Startpage searches may be used anywhere in any workspcae of your Node-RED server without having to copy the node which implements this function (this simplifies any updates)
 
 ## Usage ##
 
+The Startpage flow expects up to two parameters:
 
+* `msg.payload` - initially contains the string to search for. Later on, it will be replaced either by an error message or the parsed search results
+* `msg.language` - the language Startpage should use for the search
 
+If successfull (success is indicated by `msg.status === 200`), `msg.payload` will return an array with up to 10 search results. Each result is an object with the following properties:
+
+* `Date` - an optional date indicating when the found document was modifed
+* `URL` - the URL of the found document
+* `Title` - the title of the found document
+* `Description` - a short description of the found document
+
+If `msg.status` has a different value as 200 or 204, `msg.payload` contains an error message describing the error that occurred
 
 ### Example ###
 
