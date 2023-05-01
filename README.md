@@ -10,9 +10,16 @@ This repository contains a simple flow which runs an internet search using [Star
 
 ## Installation ##
 
-The Startpage flow relies on cURL for running a search...
+The Startpage flow relies on [Axios](https://axios-http.com/) for the communication with Startpage.com.
+
+Simply import the contents of file [Startpage-Flow.json](./Startpage-Flow.json) into your Node-RED Flow Editor and Axios will be installed as well (if necessary)
+
+Since the flow is implemented as a "reusable flow", the [corresponding nodes](https://github.com/rozek/node-red-contrib-reusable-flows) should be installed as well - afterwards, Startpage searches may be used anywhere on your Node-RED server without having to copy the node which implements this function (this simplifies any updates)
 
 ## Usage ##
+
+
+
 
 ### Example ###
 
