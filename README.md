@@ -4,7 +4,13 @@ Node-RED flow to run an internet search using Startpage.com and parse its findin
 
 ![Startpage Flow Screenshot](./Startpage-Flow.png)
 
+This repository contains a simple flow which runs an internet search using [Startpage.com](https://www.startpage.com/) and parses its results.
+
+> Just a small note: if you like this work and plan to use it, consider "starring" this repository (you will find the "Star" button on the top right of this page), so that I know which of my repositories to take most care of.
+
 ## Installation ##
+
+The Startpage flow relies on cURL for running a search...
 
 ## Usage ##
 
