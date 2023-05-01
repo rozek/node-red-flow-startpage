@@ -10,7 +10,7 @@ This repository contains a simple flow which runs an internet search using [Star
 
 ## Installation ##
 
-The Startpage flow relies on [Axios](https://axios-http.com/) for the communication with Startpage.com.
+This flow relies on [Axios](https://axios-http.com/) for the communication with Startpage.com.
 
 Simply import the contents of file [Startpage-Flow.json](./Startpage-Flow.json) into your Node-RED Flow Editor and Axios will be installed as well (if necessary)
 
