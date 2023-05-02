@@ -30,6 +30,8 @@ If successfull (success is indicated by `msg.status === 200`), `msg.payload` wil
 * `Title` - the title of the found document
 * `Description` - a short description of the found document
 
+> Nota bene: HTML entities (such as `&nbsp;`) will not be resolved
+
 If `msg.status` has a different value than 200 or 204, `msg.payload` will contain an error message describing the error that occurred
 
 ### Example ###
